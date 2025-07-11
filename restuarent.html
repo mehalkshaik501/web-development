@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Restaurant Menu</h1>
+
+  <div class="menu-item">
+    <span>🍕 Pizza - ₹150</span>
+    <button onclick="addToOrder('Pizza', 150)">Add</button>
+  </div>
+  <div class="menu-item">
+    <span>🍔 Burger - ₹100</span>
+    <button onclick="addToOrder('Burger', 100)">Add</button>
+  </div>
+  <div class="menu-item">
+    <span>🥤 Coke - ₹40</span>
+    <button onclick="addToOrder('Coke', 40)">Add</button>
+  </div>
+  <div class="menu-item">
+    <span>🍝 Pasta - ₹120</span>
+    <button onclick="addToOrder('Pasta', 120)">Add</button>
+  </div>
+
+  <div id="order-summary">
+    <h2>Your Order:</h2>
+    <ul id="order-list"></ul>
+    <div id="total">Total: ₹0</div>
+    <button id="placeOrder" onclick="placeOrder()">Place Order</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
